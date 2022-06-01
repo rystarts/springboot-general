@@ -1,2 +1,10 @@
 server:
   port: 8401
+
+feign:
+  okhttp:
+    enabled: true
+  httpclient:
+    enabled: false
+  lims :
+    url : http://127.0.0.1:8070
