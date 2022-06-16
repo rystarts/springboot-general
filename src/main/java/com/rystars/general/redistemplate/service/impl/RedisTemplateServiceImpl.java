@@ -16,6 +16,7 @@ public class RedisTemplateServiceImpl implements RedisTemplateService {
 
     @Override
     public String getRankInfo() {
+        redisTemplate.opsForValue().set("hello","hello world!!");
         String hello = (String)redisTemplate.opsForValue().get("hello");
         return hello;
     }
